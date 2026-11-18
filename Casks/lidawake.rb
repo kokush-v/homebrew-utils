@@ -1,6 +1,6 @@
 cask "lidawake" do
-  version "0.0.1-test"
-  sha256 "754f0b4019e556128bd30373081c1ed7fa4ee62304578a798b9a6132a31113a0"
+  version "1.0.1"
+  sha256 "0d699a6f30449d5d913d8c5dfc3779d8415a867b52cf468341ae1106b6d2511c"
 
   url "https://github.com/kokush-v/lidawake/releases/download/v#{version}/LidAwake-#{version}.zip"
   name "LidAwake"
