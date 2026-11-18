@@ -19,9 +19,9 @@ cask "lidawake" do
   uninstall quit:       "com.lidawake.app",
             login_item: "LidAwake",
             script:     {
-              executable: "/usr/bin/pmset",
-              args:       ["-a", "disablesleep", "0"],
-              sudo:       true,
+              executable:   "/usr/bin/sudo",
+              args:         ["-n", "/usr/bin/pmset", "-a", "disablesleep", "0"],
+              must_succeed: false,
             },
             delete:     "/etc/sudoers.d/lidawake"
 end
